@@ -1,4 +1,4 @@
-# style_transfer
+# neural style transfer
 Neural Style Transfer with VGG19 / VGG16 / Inception model
 
 
