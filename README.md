@@ -100,6 +100,3 @@ The script saves intermediate images during training in the current working dire
 - Colab users must mount their Google Drive to access images.
 - Experiment with weights to achieve desired results; higher `style_weight` enhances the style effect, while higher `content_weight` retains more of the original content.
 
-## License
-
-This project is open-source and can be freely used or modified. Attribution to the original authors and contributors is appreciated.
