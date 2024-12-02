@@ -1,7 +1,7 @@
 ## Overview
 This script implements a **Neural Style Transfer** process using pre-trained deep learning models (VGG16, VGG19, and InceptionV3) available in TensorFlow. It allows the user to blend the artistic style of one image with the content of another, creating a visually compelling combination.
 
-This project is inspired by ![Tensorflow Tutorial: DeepDream]([url](https://www.tensorflow.org/tutorials/generative/deepdream))
+This project is inspired by [Tensorflow Tutorial: DeepDream]([url](https://www.tensorflow.org/tutorials/generative/deepdream))
 
 
 
