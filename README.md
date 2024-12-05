@@ -1,4 +1,4 @@
-## Overview
+![image](https://github.com/user-attachments/assets/f54b88ce-3b40-4763-9988-aa8db814e16f)## Overview
 This script implements a **Neural Style Transfer** process using pre-trained deep learning models (VGG16, VGG19, and InceptionV3) available in TensorFlow. It allows the user to blend the artistic style of one image with the content of another, creating a visually compelling combination.
 
 This project is inspired by [Tensorflow Tutorial: DeepDream]([url](https://www.tensorflow.org/tutorials/generative/deepdream))
@@ -10,14 +10,19 @@ This project is inspired by [Tensorflow Tutorial: DeepDream]([url](https://www.t
 
 ### Input: 
 
+*Content Image: Mac Miller - Tiny Desk Concert*
 
 ![download](https://github.com/user-attachments/assets/6bb0cc87-bf54-420b-9003-34360ff28df8)
 
-*Mac Miller: Tiny Desk Concert*
+
+*Style Image: Duncan Jago - Scop(2024)*
 
 ![download](https://github.com/user-attachments/assets/0cf27a84-999d-4b6c-b736-299ffce4015c)
 
-*Duncan Jago - Scop(2024)*
+
+
+### Extracted Style Image Layers (block1_conv1): 
+![image](https://github.com/user-attachments/assets/c8e9de43-1a23-49fb-861b-90f53ab5100b)
 
 
 
