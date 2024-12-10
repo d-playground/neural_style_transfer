@@ -1,7 +1,9 @@
-![image](https://github.com/user-attachments/assets/f54b88ce-3b40-4763-9988-aa8db814e16f)## Overview
-This script implements a **Neural Style Transfer** process using pre-trained deep learning models (VGG16, VGG19, and InceptionV3) available in TensorFlow. It allows the user to blend the artistic style of one image with the content of another, creating a visually compelling combination.
+## Overview
 
-This project is inspired by [Tensorflow Tutorial: DeepDream]([url](https://www.tensorflow.org/tutorials/generative/deepdream))
+This script implements **Neural Style Transfer** using various pre-trained deep learning models available in Keras Applications. It blends the artistic style of one image (the "style image") with the content of another (the "content image"), producing a visually compelling combination.
+
+Inspired by [TensorFlow's DeepDream Tutorial](https://www.tensorflow.org/tutorials/generative/deepdream).
+
 
 
 
@@ -35,10 +37,15 @@ Content image after 10 epochs of style transfer (10 steps per epoch).
 
 ## Features
 
-- Supports three pre-trained models: **VGG16**, **VGG19**, and **InceptionV3**.
-- Customizable parameters for fine-tuning the style transfer process.
-- Generates intermediate results for visualization after every epoch.
-- Saves the final stylized image after training.
+- **Multiple Pre-Trained Models**: Choose from various models including **VGG16**, **VGG19**, **InceptionV3**, **Xception**, **ResNet**, **MobileNet**, **DenseNet**, and **EfficientNet** variants.
+- **Customizable Parameters**: Adjust weights for content, style, and total variation. Control training duration, image size, and learning rate.
+- **Intermediate Results**: Save and visualize intermediate outputs for inspection.
+- **Easy Integration**: Straightforward to run in Jupyter Notebooks, Colab, or Python scripts.
+
+## Supported Models
+
+You can choose from the following supported models:
+'Xception' 'VGG16' 'VGG19' 'ResNet50' 'ResNet50V2' 'ResNet101' 'ResNet101V2' 'ResNet152' 'ResNet152V2' 'InceptionV3' 'MobileNet' 'MobileNetV2' 'DenseNet121' 'DenseNet169' 'DenseNet201' 'EfficientNetB0' 'EfficientNetB1' 'EfficientNetB2' 'EfficientNetB3' 'EfficientNetB4' 'EfficientNetB5' 'EfficientNetB6' 'EfficientNetB7' 'EfficientNetV2B0' 'EfficientNetV2B1' 'EfficientNetV2B2' 'EfficientNetV2B3' 'EfficientNetV2S' 'EfficientNetV2M' 'EfficientNetV2L'
 
 ## Requirements
 
@@ -51,14 +58,11 @@ Content image after 10 epochs of style transfer (10 steps per epoch).
 
 ## Installation
 
-1. Clone the repository or download the script file.
-2. Install the required libraries:
+1. Clone the repository to google colab.
+2. adjust the path of the content and style images.
+3. adjust parameters in the script.
+4. run the script.
 
-   ```bash
-   pip install tensorflow numpy pillow matplotlib ipython
-   ```
-
-3. Ensure you have access to your content and style images and update their paths in the script.
 
 ## Usage
 
@@ -95,9 +99,9 @@ The script saves intermediate images during training in the current working dire
 
 ## Customization
 
-- **Model Selection**: Change `model_name` to `'VGG16'`, `'VGG19'`, or `'InceptionV3'` to use different feature extractors.
-- **Layers for Style/Content**: Modify `style_layers` and `content_layers` for finer control of the transfer process.
-- **Learning Rate**: Adjust the optimizer’s learning rate for faster or more stable convergence.
+- **Model Layers**: Modify the `style_layers` and `content_layers` chosen from the selected model for more fine-grained control.
+- **Hyperparameters**: Adjust `content_weight`, `style_weight`, and `total_variation_weight` to achieve different effects.
+- **Learning Rate**: Tune the optimizer’s learning rate for more stable or faster convergence.
 
 ## Notes
 
